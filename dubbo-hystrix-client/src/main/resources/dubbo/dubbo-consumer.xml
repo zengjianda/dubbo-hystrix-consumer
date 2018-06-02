@@ -7,10 +7,8 @@
 
     <dubbo:reference timeout="3000" interface="com.galaxy.hystrix.HelloService"
                      id="helloService" check="false">
-
         <dubbo:method name="sayHello">
             <dubbo:parameter key="fallback" value="helloFallback"/>
         </dubbo:method>
-
     </dubbo:reference>
 </beans>
