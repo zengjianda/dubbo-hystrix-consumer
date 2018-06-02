@@ -3,9 +3,11 @@ dubbo服务集成Hystrix，客户端
 
 
 maven.galaxy.com maven私服地址
+
 zookeeper.galaxy.com zookeeper地址
 
 集成Hystrix需要按照以下步骤：
+
 1.写一个Filter实现dubbo的Filter
 在invoke中加上Hystrix的熔断逻辑：如HystrixFilter
 
