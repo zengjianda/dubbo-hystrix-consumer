@@ -24,6 +24,7 @@ zookeeper.galaxy.com zookeeper地址
 内容：helloFallback=com.galaxy.hystrix.HelloFallback
 
 5. 调用dubbo服务的时候增加熔断
+
 <dubbo:reference timeout="3000" interface="com.galaxy.hystrix.HelloService"
                      id="helloService" check="false">
         <dubbo:method name="sayHello">
